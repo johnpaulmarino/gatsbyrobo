@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-module.exports = {
+ module.exports = {
   flags: {
     DEV_SSR: true,
     FAST_DEV: true ,
@@ -22,7 +22,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
-      options: {	
+      options: {
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -34,19 +34,5 @@ module.exports = {
         defaultDataLayer: { platform: 'gatsby' },
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `static/logo.svg`, // This path is relative to the root of the site.
-      },
-    }
   ],
 }
