@@ -1,0 +1,30 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nginx.git"
+    }
+  ],
+  "env": {
+    "GATSBY_BASE_URL": {
+      "required": true
+    },
+    "GATSBY_PAGE": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "ctia-resiliency-robocalls",
+  "scripts": {
+  },
+  "stack": "heroku-22"
+}
